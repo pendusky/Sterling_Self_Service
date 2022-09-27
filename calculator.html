@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<!-- Investment Calculator modal -->
+    <div class="modal fade" id="investmentCalculatorModal" tabindex="-1" role="dialog" aria-labelledby="investmentCalculatorModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+        
+        <div class="modal-body p-0">
+            <div class="bg-white investment-calculator-card">
+            <div class="d-flex align-items-center justify-content-between mb-4">
+                <h4 class="font-weight-semibold modal-title" id="investmentCalculatorModalTitle">Calculate your interest</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">
+                    <img src="http://i-investng.com/wp-content/themes/i-invest/icons/close_icon.svg" alt="Close icon">
+                </span>
+                </button>
+            </div>
+            <p class="heading-text-color mb-4">
+                See how much interest you will accrue on your investments.
+            </p>
+
+            <h5 class="font-weight-semibold mb-4 purple-text-color">Treasury bills</h5>
+
+            <form action="" id="treasuryBillsForm">
+                <div class="input-field-group">
+                <label for="treasuryBillInvestmentAmount" class="heading-text-color d-block">How much would you like to invest?</label>
+                <div class="position-relative d-flex align-items-center">
+                    <div class="position-absolute" style="left: 0; top: 3px;">
+                    <span class="font-weight-semibold heading-text-color" style="font-size: 1.5rem;">NGN</span>
+                    </div>
+                    <input type="number" name="investmentAmount" value="10000" step="any" required="true" id="treasuryBillInvestmentAmount" class="d-block w-100" style="padding-left: 3.5rem;" />
+                </div>
+                <small class="text-danger tbills-investment-amount-error">The minimum amount you can invest in treasury bills is ₦10,000</small>
+                </div>
+                <div class="input-field-group">
+                <label for="treasuryBillMaturityDate" class="heading-text-color d-block">Maturity date</label>
+                <input type="date" name="investmentDuration" id="treasuryBillMaturityDate" required="true" class="d-block w-100" />
+                </div>
+                <div class="input-field-group">
+                    <div class="d-flex align-items-center justify-content-between position-relative">
+                        <label for="treasuryBillInterestRate" class="heading-text-color flex-shrink-0">Interest rate in %</label>
+                        <input type="number" name="treasuryBillInterestRateNumber" id="treasury-bill-interest-rate-number-field" class="text-center w-50" value="10" step="0.001" min="0.001" max="100" required="true" />
+                        <div class="position-absolute" style="right: 24px;">
+                            <span class="heading-text-color font-weight-semibold" style="font-size: 1.5rem;">%</span>
+                        </div>
+                    </div>
+                <input type="number" name="interestRate" id="treasuryBillInterestRate" class="d-none w-100" />
+                <input type="range" name="treasuryBillInterestRateRange" id="treasury-bill-interest-rate-range" class="custom-range border-0 my-3 p-0 rounded-pill" value="10" step="0.001" min="0.001" max="100">
+                </div>
+
+                <button type="submit" class="d-none btn btn-lg main-button font-weight-semibold px-5 w-100 tbills-calc-btn">Calculate</button>
+                <p class="d-block investment-returns mb-0 heading-text-color">
+                    Investing <span class="font-weight-semibold">₦500,000</span> for a period of 
+                    <span class="font-weight-semibold">91 days</span> at an interest rate of 
+                    <span class="font-weight-semibold">10%</span> per annum will yield 
+                    <span class="font-weight-semibold purple-text-color" style="font-size: 1.5rem;">₦512,753.18</span>
+                </p>
+                
+                <button type="reset" class="d-none btn btn-lg secondary-button px-5 py-3 mt-4 w-100 tbills-reset-btn">Reset</button>
+            </form>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
